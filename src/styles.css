@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+:root{
+  --primary: #BE3B41;
+  --dimmed: #708189;
+  --background: #FFFFFF;
+  --background-50: rgb(255, 255, 255, 0.8);
+  --foreground: #122D3B;
+  --border: #D0D5D8;
+  --striped: #FEF6F3;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+ 
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1{
+  font-size: 48px;
+  font-weight: bold;
+}
+h2{
+  font-size: 32px;
+  font-weight: bold;
+}
+h3{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+body{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  background: var(--background);
+  color: var(--foreground);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('../assets/background-image.jpg');
+  background-size: cover;        /* cobre toda a tela */
+  background-position: center;   /* centraliza a imagem */
+  background-repeat: no-repeat;  /* não repete a imagem */
+  height: 100vh;                 /* ocupa a altura toda da tela */
+  margin: 0;
+}
+.white-blur-box{
+  background-color: var(--background-50);
+  backdrop-filter: blur(2px);          /* desfoca o fundo */
+  -webkit-backdrop-filter: blur(2px);  /* compatibilidade com Safari */
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.text-secondary{
+  color: var(--dimmed);
+}
+.text-foreground{
+  color: var(--foreground);
+}
+.content{
+  max-width: 740px;
+  padding: 16px;
+  margin: 0 auto;  
+}
+main{
+  margin-bottom: 32px;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box-avatar{
+  border: solid 3px var(--primary);
+  width: fit-content;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 auto;  
+}
+section{
+  display: flex;
+  flex-direction: column;
+  gap:8px;
+  margin-bottom: 32px;
+}
+
+.card{
+  border: 1px solid var(--border);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+.section-title{
+  display: flex;
+  align-items: center;
+  gap: 8px
+}
+.card-image{
+  width: 180px;
+  height: 160px;
+  border-radius: 8px;
+  background-color: var(--striped);
+}
+.card-project{
+  display: flex;
+  align-items: center;
+  gap: 16px
+}
+
+.subtitle{
+  display: flex;
+  align-items: center;
+  gap: 4px
+}
+
+.subtitle span{
+  color: var(--primary);
+}
+
+.button{
+  text-decoration: none;
+  list-style: none;
+  background-color: var(--striped);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  
+  color: var(--foreground);
+  font-weight: bold;
+  gap: 4px;
+  transition: all;
+}
+.button:hover{
+  opacity: 0.85;
+}
+.section-social-medias .card{
+  display: flex;
+  align-items: center;
+  gap: 8px
+}
+
+.badge{
+  background-color: var(--striped);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  width: max-content;
+  padding: 2px 4px;
+
+}
+.card .title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-tecnologies{
+  display: flex;
+  align-items: center;
+  gap: 16px
+  
+}
+
+.wraper{
+  flex-wrap: wrap;
+}
+.no-break{
+  white-space: nowrap;
+}
+.flex-1{
+  flex: 1;
+  min-width: max-content;
+  padding: 8px 20px;
+ 
+}
+
+.dropdown{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+}
+
+

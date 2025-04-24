@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Título da aba (importante pro Google) -->
+  <title>Gabriel Menezes | Desenvolvedor e Técnico em Informática</title>
+
+  <!-- Descrição (mostra nos resultados do Google) -->
+  <meta name="description"
+    content="Portfólio de Gabriel Menezes, desenvolvedor web e técnico em informática. habilidades técnicas e formas de contato." />
+
+  <!-- Palavras-chave (menos usada, mas ainda ajuda um pouco) -->
+  <meta name="keywords"
+    content="Gabriel Menezes, desenvolvedor web, técnico em informática, portfólio, redes, manutenção de computadores, desenvolvimento de sites, sistemas de informação" />
+
+  <!-- Autor -->
+  <meta name="author" content="Gabriel Menezes" />
+
+  <!-- Redes sociais (Open Graph - Facebook, LinkedIn, etc.) -->
+  <meta property="og:title" content="Gabriel Menezes | Portfólio Profissional" />
+  <meta property="og:description">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.gabrielmenezes.vercel.app.com/" />
+  <!-- <meta property="og:image" content="https://www.seusite.com.br/imagem-de-capa.jpg" /> -->
+
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+  <div class="white-blur-box">
+    <div class="content">
+      <header>
+        <a href="/">
+          <img src="../assets/logo.svg" alt="logo">
+        </a>
+       
+        <div class="relative inline-block text-left dropdown">
+          <button onclick="toggleDropdown()">
+            <img src="../assets/menu.svg" alt="icone menu">
+          </button>
+          <div id="dropdown" class="hidden absolute z-10 mt-2 w-40 bg-white rounded-md shadow-lg  text-center">
+            <p class="text-sm text-gray-600 font-medium">Menu</p>
+            <a href="#about" class="block px-4 py-2 hover:underline font-bold trsnsition-all">Quem sou</a>
+            <a href="#formations" class="block px-4 py-2 hover:underline font-bold trsnsition-all">Formações</a>
+            <a href="#knowledge" class="block px-4 py-2 hover:underline font-bold trsnsition-all">Conhecimentos</a>
+            <a href="#skills" class="block px-4 py-2 hover:underline font-bold trsnsition-all">Habilidades</a>
+            <a href="#contact" class="block px-4 py-2 hover:underline font-bold trsnsition-all">Contato</a>
+          </div>
+        </div>
+      </header>
+      <main id="about">
+        <div class="box-avatar">
+          <img class="avatar-image" src="../assets/avatar.png" alt="foto de Gabriel Menezes">
+        </div>
+        <p>Olá</p>
+        <h1>Eu sou Gabriel Menezes</h1>
+        <div class="text-secondary">
+
+          <p >Sou formado em Técnico em Informática e atualmente curso Tecnologo em Sistemas de Informação.</p>
+          <p> Tenho experiência com montagem e manutenção de computadores, redes locais e servidores.</p>
+          <p>Também atuo com desenvolvimento web, criação de interfaces, testes de aplicações e organização de conteúdos
+            visuais para sites.</p>
+          <p>Estou em constante evolução, buscando unir teoria e prática no desenvolvimento de soluções tecnológicas.</p>
+          <br>
+          <p><b class="text-foreground">Inglês:</b>Intermediário</p>
+        </div>
+      </main>
+    
+      <section id="formations">
+        <div class="section-title">
+          <img src="../assets/title-decoration.svg" alt="logo">
+          <h2>Formações</h2>
+        </div>
+        <div>
+          <div class="card">
+            <div class="title">
+              <h3  class="subtitle"> <span>•</span>Curso Técnico em Informática</h3>
+              <p class="badge">Concluido</p>
+            </div>
+            <p class="text-secondary"><a href="https://www.mg.senac.br/Unidades/Paginas/governador_valadares.aspx" class="text-secondary">SENAC </a><span>•</span> 04/07/2022 á 08/07/2024</p>
+          </div>
+          <div class="card">
+            <div class="title">
+              <h3  class="subtitle"><span>•</span>Tecnólogo em Sistemas de Informação</h3>
+              <p class="badge">Cursando</p>
+            </div>
+            <a href="https://univale.br/" class="text-secondary">Universidade Vale do Rio Doce - Univale</a>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="section-title">
+          <img src="../assets/title-decoration.svg" alt="logo">
+        </div>
+        <div>
+          <div class="card card-project">
+            <div class="card-image">   
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="knowledge">
+        <div class="section-title">
+          <img src="../assets/title-decoration.svg" alt="logo">
+          <h2>Conhecimentos</h2>
+        </div>
+        <div class="card card-tecnologies">
+          <div class="button">HTML</div>
+          <div class="button">CSS</div>
+          <div class="button">JavaScript</div>
+        </div>
+      </section>
+      <section id="skills">
+        <div class="section-title">
+          <img src="../assets/title-decoration.svg" alt="logo">
+          <h2>Habilidades Técnicas</h2>
+        </div>
+        <div>
+          <div class="card">
+            <h3 class="subtitle"><span>•</span>Infraestrutura e Redes</h3>
+            <ul class="text-secondary">
+              <li>Planejamento e montagem de computadores</li>
+              <li>Instalação e manutenção de hardware e software</li>
+              <li>Planejamento e manutenção de redes locais de computadores</li>
+              <li>Configuração e monitoramento de sistemas operacionais de rede (servidores)</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 class="subtitle"><span>•</span>Desenvolvimento</h3>
+            <ul class="text-secondary">
+              <li>Análise e planejamento de desenvolvimento de softwares</li>
+              <li>Execução de testes e implementação de aplicativos computacionais</li>
+              <li>Desenvolvimento e organização de conteúdos para sites (estrutura e texto)</li>
+              <li>Manipulação de imagens vetoriais e bitmap para web</li>
+              <li>Otimização de elementos visuais e gráficos para navegação</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 class="subtitle"><span>•</span>Formação Técnica</h3>
+            <ul class="text-secondary">
+              <li>Montagem e manutenção de PCs</li>
+              <li>Instalação de redes e servidores locais</li>
+              <li>Desenvolvimento de sites com foco em estrutura, conteúdo e design visual</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="section-social-medias">
+        <div class="section-title">
+          <img src="../assets/title-decoration.svg" alt="logo">
+          <h2>Contatos e redes sociais</h2>
+        </div>
+        <div class="card wraper">
+          <a href="tel:+553399320713" class="button flex-1" target="_blank">
+            <img src="../assets/smartphone.svg" alt="Icone samrtphone para contato">
+            <span class="no-break">+55 33 9932-0713</span>
+          </a>
+          <a href="https://wa.me/553399320713" target="_blank" class="button flex-1">
+            <img src="../assets/logo-whatsapp.svg" alt="Icone Whatsapp para contato">
+            <span class="no-break">+55 33 9932-0713</span>
+          </a>
+          <a href="https://www.linkedin.com/in/gabriel-menezes-756aa6361/" target="_blank" class="button flex-1">
+            <img src="../assets/linkedin.svg" alt="Icone Linkedin para contato">
+            <span class="no-break">gabriel-menezes-756aa6361</span>
+          </a>
+          <a href="" target="_blank" class="button flex-1">
+            <img src="../assets/github.svg" alt="Icone github para contato">
+            <span class="no-break">gabrielmenezes</span>
+          </a>
+          <a href="mailto:gabriel.8769457@aluno.mg.gov.br" target="_blank" class="button flex-1">
+            <img src="../assets/mail.svg" alt="Icone e-mail para contato">
+            <span class="no-break">gabriel.8769457@aluno.mg.gov.br</span>
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  function toggleDropdown() {
+    document.getElementById("dropdown").classList.toggle("hidden");
+  }
+</script>
+
+</html>
